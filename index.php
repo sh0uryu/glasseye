@@ -13,7 +13,7 @@
 		<a class="menucol" id="contact-menu">Contact</a>
 		<a class="menucol" id="about-menu">About</a>
 		
-		<footer>Cândido Ferreira &copy 2020</footer>
+		<footer><a href="http://github.com/sh0uryu" target="_blank">Cândido Ferreira &copy 2020</a></footer>
 	</div>
 	<div id="content">
 	
