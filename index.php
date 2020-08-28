@@ -3,10 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style src="style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Glass Eye</title>
 </head>
 <body>
-    
+	<div id="menu">
+		<a class="menucol" id="home-menu">Home</a>
+		<a class="menucol" id="portfolio-menu">Portfolio</a>
+		<a class="menucol" id="contact-menu">Contact</a>
+		<a class="menucol" id="about-menu">About</a>
+		
+		<footer>Cândido Ferreira &copy 2020</footer>
+	</div>
+	<div id="content">
+	
+	
+	</div>
 </body>
 </html>
