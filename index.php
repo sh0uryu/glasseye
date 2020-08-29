@@ -7,17 +7,23 @@
     <title>Glass Eye</title>
 </head>
 <body>
-	<div id="menu">
+	<nav id="menu">
 		<a class="menucol" id="home-menu">Home</a>
 		<a class="menucol" id="portfolio-menu">Portfolio</a>
 		<a class="menucol" id="contact-menu">Contact</a>
 		<a class="menucol" id="about-menu">About</a>
 		
-		<footer><a href="http://github.com/sh0uryu" target="_blank">Cândido Ferreira &copy 2020</a></footer>
-	</div>
-	<div id="content">
+		<footer>
+		<a href="http://github.com/sh0uryu" target="_blank">Cândido Ferreira &copy 2020</a>
+		</footer>
+	</nav>
 	
+	<div id="content">	
+	
+	<h1>Glass eye</h1>
 	
 	</div>
+	
+
 </body>
 </html>
