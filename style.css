@@ -82,6 +82,18 @@ body {
     display: none;
 }
 
+.navigation img{
+    width: 0;
+}
+
+.navigation input:checked~ img{
+    display: block;
+    margin: auto;
+    width: 5rem;
+    transition: 0.5s;
+    opacity: 0.2;
+}
+
 #footer {
     display: none;
     color: #888;
@@ -162,6 +174,10 @@ body {
     .navigation input:checked~ i {
         height: 200px;
         transform-origin: top 0.5;
+    }
+
+    .navigation input:checked~ img{
+        display: none;
     }
 
     .navigation input:checked~ #footer {
