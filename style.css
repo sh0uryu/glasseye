@@ -78,6 +78,10 @@ body {
     transition: 0.2s;
 }
 
+.menu i {
+    display: none;
+}
+
 #footer {
     display: none;
     color: #888;
@@ -141,7 +145,20 @@ body {
         height: 0;
     }
 
+    .menu i {
+        display: inline;
+    }
+
+    .menu p {
+        display: none;
+    }
+
     .navigation input:checked~ .menu {
+        height: 200px;
+        transform-origin: top 0.5;
+    }
+
+    .navigation input:checked~ i {
         height: 200px;
         transform-origin: top 0.5;
     }
