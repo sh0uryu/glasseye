@@ -1,3 +1,5 @@
+/* Default status */
+
 @font-face {
     font-family: Luna;
     src: url(font/Luna.ttf);
@@ -6,6 +8,7 @@
 html {
     min-height: 100%;
     height: 100%;
+    background-image: url("/img/stars.png");
 }
 
 body {
@@ -14,8 +17,11 @@ body {
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background-color: black;
+    background-color: #111;
+    cursor: default;
 }
+
+/* End default  */
 
 .navigation {
     background: #fff;
@@ -114,14 +120,53 @@ body {
 }
 
 #content {
-    display: flex;
-    color: #fff;
     font-family: "Luna";
-    width: 95%;
+    width: 100%;
     height: 100vh;
-    justify-content: center;
-    align-items: center;
 }
+
+#last-layer{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-image: url("img/stars.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#mid-layer{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-image: url("img/mountain.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100vw;
+}
+
+#mid-layer h1{
+    color: rgba(0, 16, 61, 0.9);
+    text-shadow: 1px 1px 9px #fff ;
+    font-size: 2.5rem;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+}
+
+#first-layer{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-image: url("img/adventurer.png");
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position-x: right;
+    background-position-y: 100%;
+}
+
+
+/* Mobile part */
 
 @media (max-width: 425px) {
 
