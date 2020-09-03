@@ -152,6 +152,7 @@ body {
     top: 50vh;
     left: 50vw;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 #first-layer{
@@ -160,8 +161,8 @@ body {
     width: 100%;
     background-image: url("img/adventurer.png");
     background-repeat: no-repeat;
-    background-size: 20%;
-    background-position-x: right;
+    background-size: 15vw;
+    background-position-x: left;
     background-position-y: 100%;
 }
 
@@ -227,6 +228,15 @@ body {
 
     .navigation input:checked~ #footer {
         display: none;
+    }
+
+    #mid-layer{
+        background-size: 200vh;
+    }
+    
+    #first-layer{
+        background-size: 15vh;
+
     }
 
 }
