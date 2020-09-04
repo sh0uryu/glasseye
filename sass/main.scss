@@ -2,13 +2,12 @@
 
 @font-face {
     font-family: Luna;
-    src: url(/font/Luna.ttf);
+    src: url("../font/Luna.ttf");
 }
 
 html {
     min-height: 100%;
     height: 100%;
-    background-color: #111;
     scrollbar-color:#444444 rgba( 0, 0, 0,0);
     scrollbar-width: thin;
 }
@@ -141,7 +140,7 @@ body {
     display: flex;
     height: 100%;
     width: 100%;
-    background-image: url("/img/stars.png");
+    background-image: url("../img/stars.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -150,7 +149,7 @@ body {
     display: flex;
     height: 100%;
     width: 100%;
-    background-image: url("/img/mountain.png");
+    background-image: url("../img/mountain.png");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 100vw;
@@ -171,7 +170,7 @@ body {
     display: flex;
     height: 100%;
     width: 100%;
-    background-image: url("/img/adventurer.png");
+    background-image: url("../img/adventurer.png");
     background-repeat: no-repeat;
     background-size: 15vw;
     background-position-x: left;
