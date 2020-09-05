@@ -1,5 +1,4 @@
 /* Default style */
-
 @font-face {
     font-family: Luna;
     src: url("../font/Luna.ttf");
@@ -188,85 +187,6 @@ body {
     background-image: url("../img/stars.png");
     background-repeat: no-repeat;
     background-size: cover;
-}
+}   
 
 /* End image layers */
-
-
-/* Mobile size style */
-
-@media (max-width: 425px) {
-
-    .navigation {
-        background-color: rgba(0, 0, 0, 0);
-        top: 0;
-        width: fit-content;
-        height: fit-content;
-
-            a {
-                color: #fff;
-                margin: 0.5rem 0;
-            }
-
-            input {
-                position: inline-block;
-                margin: 0;
-                width: 60px;
-                height: 60px;
-
-                    &:checked~ {
-                        
-                        span{
-                        transform: rotate(90deg);
-                        }
-
-                        i{
-                            height: 200px;
-                            transform-origin: top 0.5;
-                        }
-
-                        img{
-                            display: none;
-                        }
-
-                        .menu {
-                            width: 2rem;
-                            height: 200px;
-                            transform-origin: top 0.5;
-                        }
-
-                        #footer {
-                            display: none;
-                        }
-                    }
-                }
-            
-        span {
-            color: #fff;
-            marsgin: 10px 0;
-            transition: transform 0.5s;
-        }
-        }
-
-    .menu {
-        height: 0;
-
-            i {
-                display: inline;
-            }
-
-            p {
-                display: none;
-            }
-    
-    }
-
-    #mid-layer{
-        background-size: 200vh;
-    }
-    
-    #first-layer{
-        background-size: 15vh;
-    }
-}
-/* End mobile style */
