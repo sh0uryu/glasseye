@@ -1,4 +1,4 @@
-/* Default status */
+/* Default style */
 
 @font-face {
     font-family: Luna;
@@ -32,7 +32,10 @@ body {
     background: #222;
   }
 
-/* End default  */
+/* End default style */
+
+
+/* Navigation bar style */
 
 .navigation {
     background: #fff;
@@ -43,23 +46,52 @@ body {
     flex-direction: column;
     align-items: center;
     overflow: hidden;
-}
 
-.navigation input {
-    position: relative;
-    width: 2.2rem;
-    height: 2.2rem;
-    cursor: pointer;
-    opacity: 0;
-    margin: 0.3em 1em;
-}
+        input {
+            position: relative;
+            width: 2.2rem;
+            height: 2.2rem;
+            cursor: pointer;
+            opacity: 0;
+            margin: 0.3em 1em;
 
-.navigation span {
-    position: absolute;
-    color: #3f3f3f;
-    pointer-events: none;
-    margin: 0.3em 1em;
-    padding: 0;
+                &:checked~ {
+                    
+                        img {
+                        display: block;
+                        margin: auto;
+                        width: 5rem;
+                        transition: 0.5s;
+                        opacity: 0.2;
+                        }
+
+                        .menu {
+                            width: 10rem;
+                            transition: 0.5s;
+                        }
+
+                        #footer {
+                            display: block;
+                            position: absolute;
+                            bottom: 0;
+                            transition: 0.5s;
+                        }
+                }   
+
+    }
+
+    span {
+        position: absolute;
+        color: #3f3f3f;
+        pointer-events: none;
+        margin: 0.3em 1em;
+        padding: 0;
+    }
+
+    img{
+        width: 0;
+    }
+
 }
 
 .menu {
@@ -67,11 +99,6 @@ body {
     padding: 0;
     width: 0;
     overflow: hidden;
-    transition: 0.5s;
-}
-
-.navigation input:checked~.menu {
-    width: 10rem;
     transition: 0.5s;
 }
 
@@ -86,29 +113,17 @@ body {
     text-transform: uppercase;
     font-weight: 500;
     font-size: 1.2rem;
-}
 
-.menu-item:hover {
-    color: #666;
-    border: 3px #666;
-    border-style: hidden solid;
-    transition: 0.2s;
-}
+        i {
+            display: none;
+        }
 
-.menu i {
-    display: none;
-}
-
-.navigation img{
-    width: 0;
-}
-
-.navigation input:checked~ img{
-    display: block;
-    margin: auto;
-    width: 5rem;
-    transition: 0.5s;
-    opacity: 0.2;
+        &:hover {
+            color: #666;
+            border: 3px #666;
+            border-style: hidden solid;
+            transition: 0.2s;
+        }
 }
 
 #footer {
@@ -116,19 +131,14 @@ body {
     color: #888;
     font-size: 0.9rem;
     text-decoration: none;
+
+        &:hover {
+            color: #666;
+        }
 }
 
-#footer:hover {
-    color: #666;
-}
+/* End Navigation bar */
 
-.navigation input:checked~#footer {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    transition: 0.5s;
-
-}
 
 #content {
     font-family: "Luna";
@@ -136,35 +146,8 @@ body {
     height: 100vh;
 }
 
-#last-layer{
-    display: flex;
-    height: 100%;
-    width: 100%;
-    background-image: url("../img/stars.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
-#mid-layer{
-    display: flex;
-    height: 100%;
-    width: 100%;
-    background-image: url("../img/mountain.png");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: 100vw;
-}
-
-#mid-layer h1{
-    color: rgba(0, 16, 61, 0.9);
-    text-shadow: 1px 1px 9px #fff ;
-    font-size: 2.5rem;
-    position: absolute;
-    top: 50vh;
-    left: 50vw;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
+/* Image layers  */
 
 #first-layer{
     display: flex;
@@ -177,8 +160,40 @@ body {
     background-position-y: 100%;
 }
 
+#mid-layer{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/mountain.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100vw;
 
-/* Mobile part */
+        h1{
+            color: rgba(0, 16, 61, 0.9);
+            text-shadow: 1px 1px 9px #fff ;
+            font-size: 2.5rem;
+            position: absolute;
+            top: 50vh;
+            left: 50vw;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+}
+
+#last-layer{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/stars.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* End image layers */
+
+
+/* Mobile size style */
 
 @media (max-width: 425px) {
 
@@ -187,58 +202,63 @@ body {
         top: 0;
         width: fit-content;
         height: fit-content;
-    }
 
-    .navigation input {
-        position: inline-block;
-        margin: 0;
-        width: 60px;
-        height: 60px;
-    }
+            a {
+                color: #fff;
+                margin: 0.5rem 0;
+            }
 
-    .navigation span {
-        color: #fff;
-        margin: 10px 0;
-        transition: transform 0.5s;
-    }
-    .navigation input:checked~ span{
-        transform: rotate(90deg);
-    }
+            input {
+                position: inline-block;
+                margin: 0;
+                width: 60px;
+                height: 60px;
 
-    .navigation a {
-        color: #fff;
-        margin: 0.5rem 0;
-    }
+                    &:checked~ {
+                        
+                        span{
+                        transform: rotate(90deg);
+                        }
+
+                        i{
+                            height: 200px;
+                            transform-origin: top 0.5;
+                        }
+
+                        img{
+                            display: none;
+                        }
+
+                        .menu {
+                            width: 2rem;
+                            height: 200px;
+                            transform-origin: top 0.5;
+                        }
+
+                        #footer {
+                            display: none;
+                        }
+                    }
+                }
+            
+        span {
+            color: #fff;
+            marsgin: 10px 0;
+            transition: transform 0.5s;
+        }
+        }
 
     .menu {
         height: 0;
-    }
 
-    .menu i {
-        display: inline;
-    }
+            i {
+                display: inline;
+            }
 
-    .menu p {
-        display: none;
-    }
-
-    .navigation input:checked~ .menu {
-        width: 2rem;
-        height: 200px;
-        transform-origin: top 0.5;
-    }
-
-    .navigation input:checked~ i {
-        height: 200px;
-        transform-origin: top 0.5;
-    }
-
-    .navigation input:checked~ img{
-        display: none;
-    }
-
-    .navigation input:checked~ #footer {
-        display: none;
+            p {
+                display: none;
+            }
+    
     }
 
     #mid-layer{
@@ -247,7 +267,6 @@ body {
     
     #first-layer{
         background-size: 15vh;
-
     }
-
 }
+/* End mobile style */
