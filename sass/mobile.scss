@@ -64,8 +64,16 @@
 
 }
 
+#content{
+    padding: 0;
+}
+
 #mid-layer{
     background-size: 200vh;
+    
+    h1{
+        font-size: 3rem;
+    }
 }
 
 #first-layer{
