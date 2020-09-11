@@ -64,18 +64,11 @@
 
 }
 
-#content{
-    padding: 0;
+#second-layer::before {
+    background-size: 400vw 90vh;
 }
 
-#mid-layer{
-    background-size: 200vh;
-    
-    h1{
-        font-size: 3rem;
-    }
-}
-
-#first-layer{
-    background-size: 15vh;
+#second-layer img{
+    width: 30vw;
+    bottom: 10%;
 }
