@@ -39,6 +39,7 @@ body,html {
     flex-direction: column;
     align-items: center;
     overflow: hidden;
+    z-index: 99;
 
         input {
             position: relative;
@@ -134,6 +135,7 @@ body,html {
 
 
 #content {
+    margin: 0;
     height: 100vh;
     overflow-x: hidden;
     perspective: 2px;
@@ -150,17 +152,16 @@ body,html {
     overflow-x: hidden;
     perspective: 2px;
     transform-style: preserve-3d;
-    margin-right: 4rem;
   }
   
-  .sec {
+  .layer {
     position: relative;
     height: 100vh;
     min-height: 500px;
     transform-style: inherit;
   }
   
-  .sec::before {
+  .layer::before {
     position: absolute;
     top: 0;
     right: 0;
@@ -191,6 +192,7 @@ body,html {
     background-image: url("../img/mountain.png");
     background-size: 150vw;
     background-position: bottom;
+
 }
 
 #second-layer img{
