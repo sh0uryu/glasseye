@@ -8,7 +8,7 @@ body,html {
     min-height: 100%;
     height: 100%;
     margin: 0;
-    padding: 0;
+    padding: 0 2rem 0 0;
     background-color: black;
     scrollbar-color:#444444 rgba( 0, 0, 0,0);
     scrollbar-width: thin;
@@ -136,15 +136,18 @@ body,html {
 
 #content {
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     margin: 0 auto;
-    max-width: 800px;
-    grid-gap: 20px;
-    padding: 10px ;
+    max-width: 80%;
+    grid-gap: 40px;
+    padding: 15px 30px;
 }
 
 .port-grid{
     display: grid;
+    margin: 0 auto;
+
+
     p{
         background: rgba(#000, .7);
         color: #fff;
@@ -158,9 +161,8 @@ body,html {
 }
 
 .img{
-    display: grid;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     background-color: #fff;
     grid-column: 1;
     grid-row: 1/3;
