@@ -11,9 +11,9 @@
 ---
 
 ### We'll use what's new and what's being talked about CSS in front-end world, stuff like:
-* Flexbox
+* Flexbox and grid layout
 * Dropdown
 * Parallax effect
    > With different layers of images
-* Switch menu
+* Toggle menu
 * Transitions
