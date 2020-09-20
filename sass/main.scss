@@ -135,12 +135,13 @@ body,html {
 
 #content {
     margin: 0;
-    height: 100vh;
+    height: fit-content;
     overflow-x: hidden;
     perspective: 2px;
     transform-style: preserve-3d;
     font-family: "Luna";
     scrollbar-width: none;
+
 }
 
 
@@ -149,7 +150,7 @@ body,html {
   .layer {
     position: relative;
     height: 100vh;
-    min-height: 500px;
+    min-height: 100vh;
     transform-style: inherit;
   }
   
@@ -167,37 +168,52 @@ body,html {
     transform: translateZ(-1px) scale(1.5);
   }
 
-  .ptext {
-    position: absolute;
-    top: 25%;
-    width: 100%;
-    color: #ffae00e6;
-    text-shadow: 1px 1px 9px rgb(0, 0, 0) ;
-    font-size: 4.5rem;
-    text-align: center;
+#first-layer{
+    p {
+      position: absolute;
+      top: 25%;
+      width: 100%;
+      color: #ffae00e6;
+      text-shadow: 1px 1px 9px rgb(0, 0, 0) ;
+      font-size: 4rem;
+      text-align: center;
+    }
+
+    i {
+      position: absolute;
+      bottom: 20px;
+      color: #ffae00e6;
+      text-shadow: 1px 1px 9px rgb(0, 0, 0) ;
+      font-size: 4rem;
+      left: 50%;
+      transform: translate(-50%);
+    }
+
+    &::before {
+      width: 100vw;
+      height: 200vh;
+      background-image: url("../img/woods.png");
+      background-size: cover;
   }
   
-  #first-layer::before {
-    height: 200%;
-    background-image: url("../img/woods.png");
-    background-size: 200%;
-    position: fixed;
 }
 
-  
-  #second-layer::before {
+ #second-layer {
+  &::before {
     background-image: url("../img/camera.png");
     background-size: 20vw;
     background-position: 50%;
     transform: rotate(-19deg);
-
 }
 
-#second-layer img{
+  img {
     position: absolute;
     width: 20vw;
-    bottom: -40%;
+    margin-top: auto;
+    bottom: 0;
     left: 50%;
-    transform: translate(-50%,);
+    transform: translate(-50%);
+  }
 }
+
 /* End image layers */
