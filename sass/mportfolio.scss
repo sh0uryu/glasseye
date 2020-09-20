@@ -67,3 +67,24 @@ body,html {
         }
 
 }
+
+#content {
+    grid-template-columns: repeat(auto-fill, minmax(65vw, 1fr));
+    margin: 0 auto;
+    max-width: 100%;
+    grid-gap: 30px;
+    padding: 20px;
+}
+
+.port-grid{
+    p{
+        font-size: 1rem;
+        padding: 0.2rem;
+    }
+}
+
+.img{
+    width: 65vw;
+    height: 65vw;
+    background-color: #fff;
+}
