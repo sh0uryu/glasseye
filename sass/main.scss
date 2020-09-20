@@ -135,13 +135,15 @@ body,html {
 
 #content {
     margin: 0;
-    height: fit-content;
+    height: 200vh;
     overflow-x: hidden;
     perspective: 2px;
     transform-style: preserve-3d;
     font-family: "Luna";
     scrollbar-width: none;
-
+    background-image: url("../img/woods.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
@@ -150,7 +152,6 @@ body,html {
   .layer {
     position: relative;
     height: 100vh;
-    min-height: 100vh;
     transform-style: inherit;
   }
   
@@ -190,10 +191,6 @@ body,html {
     }
 
     &::before {
-      width: 100vw;
-      height: 200vh;
-      background-image: url("../img/woods.png");
-      background-size: cover;
   }
   
 }
@@ -203,16 +200,14 @@ body,html {
     background-image: url("../img/camera.png");
     background-size: 20vw;
     background-position: 50%;
-    transform: rotate(-19deg);
 }
 
   img {
     position: absolute;
     width: 20vw;
-    margin-top: auto;
-    bottom: 0;
+    bottom: -9%;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-50%); 
   }
 }
 
