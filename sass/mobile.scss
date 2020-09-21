@@ -64,11 +64,21 @@
 
 }
 
-#second-layer::before {
-    background-size: 400vw 90vh;
+#first-layer {
+    p {
+        font-size: 2.5rem;
+    }
+    i {
+        font-size: 2.5rem;
+    }
 }
 
-#second-layer img{
-    width: 30vw;
-    bottom: 10%;
+#second-layer {
+    &::before {
+        background-size: 40vw;
+    }
+
+    img {
+        width: 40vw;
+    }
 }
