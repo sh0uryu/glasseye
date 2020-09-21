@@ -135,7 +135,7 @@ body,html {
 
 #content {
     margin: 0;
-    height: 200vh;
+    height: fit-content;
     overflow-x: hidden;
     perspective: 2px;
     transform-style: preserve-3d;
@@ -144,6 +144,14 @@ body,html {
     background-image: url("../img/woods.png");
     background-size: cover;
     background-repeat: no-repeat;
+
+    img {
+      position: absolute;
+      width: 20vw;
+      left: 50%;
+      transform: translate(-50%);
+      
+    }
 }
 
 
@@ -189,25 +197,20 @@ body,html {
       left: 50%;
       transform: translate(-50%);
     }
+    
 
     &::before {
+      background-image: url("../img/leaves.png");
+      background-size: cover;
   }
   
 }
 
  #second-layer {
   &::before {
-    background-image: url("../img/camera.png");
-    background-size: 20vw;
+    background-image: url("../img/camera.png"), url("../img/leaves.png");
+    background-size: 20vw, 80vw;
     background-position: 50%;
-}
-
-  img {
-    position: absolute;
-    width: 20vw;
-    bottom: -9%;
-    left: 50%;
-    transform: translate(-50%); 
   }
 }
 
