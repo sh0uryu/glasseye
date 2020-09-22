@@ -169,3 +169,55 @@ body,html {
 
   
 /* End Album grid */
+
+/* Modal items */
+
+.modal {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .9);
+    transition: opacity .25s ease;
+  }
+  
+  .modal-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+  }
+  
+  .modal-state {
+    display: none;
+  }
+  
+  .modal-state:checked+.modal {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .modal-state:checked+.modal .modal-inner {
+    top: 0;
+  }
+  
+  .modal-inner {
+    transition: top .25s ease;
+    position: absolute;
+    top: -20%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    margin: auto;
+    overflow: auto;
+    background: #fff;
+    height: 80%;
+  }
+
+/* End Modal items */
