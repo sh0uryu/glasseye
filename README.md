@@ -5,7 +5,7 @@
 ### Glass eye is a professional photography (only the visual aspect) website, make only with HTML and CSS. let's see how poweful css can be nowadays, will have:
 * Interactivity
 * Responsive design
-* minimalism
+* Effects
 * And more without Javascript or css frameworks
 
 ---
@@ -18,3 +18,12 @@
    > With different layers of images
 * Toggle menu
 * Transitions
+
+---
+
+## CONTRIBUTIONS 
+#### Pull requests are welcome!
+
+---
+## LICENSE
+[MIT](https://choosealicense.com/licenses/mit/)
