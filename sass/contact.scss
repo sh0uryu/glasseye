@@ -131,10 +131,16 @@ body,html {
 }
 
 #content {
-    margin: auto;
-    display: grid;
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    transform: translate(-40%, -50%);
+    height: fit-content;
+    width: 70vw;
     max-width: 70vw;
+    padding: 1em;
     background-color: #f8f8f8;
+    border-radius: 3px;
 
     h1 {
         color: #555;
