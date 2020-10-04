@@ -70,11 +70,20 @@ body,html {
 }
 
 .menu-item {  
+    &:active {
+        padding: auto;
+        background-color: rgba(#fff, .1);
+        border-radius: 50px;
+        transition: 0.5s;
+      }
     &:hover {
       border: none;
     }
+    &:focus {
+        outline: none;
+    }
   }
-
+  
 #content {
     left: 50%;
     top: 25%;
