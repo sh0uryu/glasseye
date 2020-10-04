@@ -73,6 +73,13 @@ body,html {
     &:hover {
       border: none;
     }
+    &:focus {
+        outline: none;
+    }
+    &:active {  
+        background-color: rgba(#fff, .1);
+        border-radius: 100%;
+    }
   }
 
 
