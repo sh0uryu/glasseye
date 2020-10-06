@@ -71,12 +71,12 @@ body,html {
 
 .menu-item {  
     &:active {
-        padding: auto;
-        background-color: rgba(#fff, .1);
-        border-radius: 50px;
-        transition: 0.5s;
+      background-color: rgba(#fff, .2);
+      border-radius: 50px;
+      transition: 0.3s;
       }
     &:hover {
+      color: #fff;   
       border: none;
     }
     &:focus {
