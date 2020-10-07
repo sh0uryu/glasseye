@@ -130,6 +130,7 @@ body,html {
 
 
 #content {
+    cursor: default;
     position: absolute;
     left: 40%;
     top: 50%;
@@ -156,11 +157,11 @@ body,html {
 .grid {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 2rem;
+    gap: 2em;
 
     &:nth-child(2) {
         h3 {
-            margin: 0.5rem;
+            margin: 0.5rem 0 0.5rem;
             font-family: Arial, Helvetica, sans-serif;
             font-weight: 100;
             font-size: 1.6rem;  
@@ -190,7 +191,7 @@ body,html {
     }
 
     h3 {
-        margin: 0.5rem;
+        margin: 0.5rem 0 0.5rem 0;
         font-family: Arial, Helvetica, sans-serif;
         font-weight: 100;
         font-size: 1.5rem;  
