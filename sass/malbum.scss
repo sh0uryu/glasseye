@@ -92,6 +92,6 @@ body,html {
 }
 
 .modal-inner {
-    width: 90vw;
-    height: 85vh;
+    max-width: 90vw;
+    max-height: 85vh;
   }
